@@ -165,6 +165,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   block-size: cover;
+  max-width: 1440px;
 }
 
 .hero-container {
@@ -256,6 +257,9 @@ img {
 }
 
 .f-icons-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   flex-shrink: 0;
