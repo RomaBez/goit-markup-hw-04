@@ -161,7 +161,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpeg);
+    url(../images/people_office_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -427,6 +427,13 @@ img {
   margin-bottom: 120px;
 }
 
+.portfolio-cover-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .portfolio-item {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
@@ -435,6 +442,7 @@ img {
   letter-spacing: 0.02em;
   margin-top: 32px;
   margin-bottom: 8px;
+  position: relative;
 }
 
 .portfolio-img {
@@ -442,16 +450,27 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portofolio-cover-wrapp {
+.portfolio-cover-zone {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-img:hover .protfolio-text-wrapp {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(0);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.portfolio-img:hover .portofolio-cover-text {
+  transform: translateY(0%);
+}
+.portofolio-cover-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  position: absolute;
+  top: 0;
+  background: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-discrpt {
@@ -459,36 +478,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.protfolio-text-wrapp {
-  position: absolute;
-  top: 0;
-  background: #4d5ae5;
-  width: 360px;
-  height: 300px;
-  flex-shrink: 0;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portofolio-cover-text-div {
-  position: relative;
-}
-
-.portofolio-cover-text {
-  position: absolute;
-  top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding: 40px 32px;
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #f4f4fd;
-  background-color: #4d5ae5;
 }
 
 .item-container {
